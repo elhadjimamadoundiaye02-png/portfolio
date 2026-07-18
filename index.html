@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Hadji Mamadou Ndiaye | Portfolio Cybersécurité</title>
+  <meta name="description" content="Portfolio professionnel de El Hadji Mamadou Ndiaye, ingénieur réseaux, systèmes et cybersécurité.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="home">
+    <div class="container hero">
+      <div class="hero-photo" id="profileImg" title="Cliquez pour agrandir">
+        <img src="profile.jpeg" alt="Photo de El Hadji Mamadou Ndiaye">
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">Portfolio Professionnel</p>
+        <h1>EL HADJI MAMADOU NDIAYE</h1>
+        <p class="subtitle">Ingénieur en Systèmes, Réseaux et Télécommunications</p>
+        <p class="hero-description">Passionné par la cybersécurité, l'automatisation et la défense des infrastructures numériques critiques.</p>
+        <div class="hero-meta">
+          <span><i class="fas fa-location-dot"></i> Dakar, Sénégal</span>
+          <a href="https://www.linkedin.com/in/el-hadji-mamadou-ndiaye-293684285/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/elmatub" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Me Contacter</a>
+          <a href="#documents" class="btn btn-outline">CV & Certificats</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="#about">Profil</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets Clés</a></li>
+        <li><a href="#documents">CV/Certificats</a></li>
+        <li><a href="#testimonials">Témoignages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="about">
+    <div class="container">
+      <h2>Profil Professionnel</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <p>Etudiant en Licence 3 SRT à l'ESP Dakar, orienté cybersécurité, systèmes et réseaux. Je conçois des solutions robustes en administration, monitoring et automatisation.</p>
+          <p>Ma démarche combine rigueur technique, esprit d'analyse et collaboration pour livrer des projets fiables et utiles aux entreprises.</p>
+        </div>
+        <aside class="highlight-card">
+          <h3>Valeur ajoutée</h3>
+          <ul>
+            <li>Sécurité offensive et défensive</li>
+            <li>Automatisation Python pour l'infra</li>
+            <li>Monitoring réseau orienté performance</li>
+            <li>Excellente capacité d'adaptation</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Compétences Techniques</h2>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3><i class="fas fa-shield-halved"></i> Cybersécurité & Réseaux</h3>
+          <p>Metasploit, Nessus, Wireshark, Cisco Packet Tracer, pare-feu et VPN.</p>
+        </article>
+        <article class="skill-card">
+          <h3><i class="fas fa-server"></i> Systèmes & Virtualisation</h3>
+          <p>Linux (Kali, Ubuntu, Debian), Windows Server, Docker.</p>
+        </article>
+        <article class="skill-card">
+          <h3><i class="fas fa-code"></i> Développement & Automatisation</h3>
+          <p>Python, C, Java, SQL, scripts d'automatisation d'administration.</p>
+        </article>
+        <article class="skill-card">
+          <h3><i class="fas fa-globe"></i> Outils Web</h3>
+          <p>Git/GitHub, npm/pnpm, bases Fullstack, déploiement d'applications web.</p>
+        </article>
+      </div>
+      <div class="languages">
+        <span>Français: Courant</span>
+        <span>Anglais: Technique</span>
+        <span>Wolof: Maternelle</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projets Clés</h2>
+      <p class="section-intro">Une sélection de projets concrets en systèmes, réseaux, IA et développement, conçus de bout en bout.</p>
+      <div class="projects-grid important-projects">
+
+        <article class="project-card">
+          <div class="project-status status-progress"><i class="fas fa-code-branch"></i> En cours</div>
+          <div class="project-content">
+            <h3>SecureBox</h3>
+            <p class="project-date">Moteur de conteneurs sécurisé en Python</p>
+            <p>Implémentation d'un mini "Docker-like" en Python s'appuyant directement sur les mécanismes du noyau Linux : namespaces, cgroups v2 et networking (bridge, paires veth, NAT). Objectif : comprendre et reproduire l'isolation de processus au niveau système, sans framework intermédiaire.</p>
+            <div class="tech-tags">
+              <span>Python</span><span>Linux Namespaces</span><span>cgroups v2</span><span>Networking</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-status status-done"><i class="fas fa-check"></i> Réalisé</div>
+          <div class="project-content">
+            <h3>BétailSécurité</h3>
+            <p class="project-date">Système de surveillance intelligente du bétail</p>
+            <p>Solution de vidéosurveillance basée sur la détection d'objets (YOLO) pour repérer moutons et intrus, avec alertes Telegram en temps réel. Backend FastAPI, frontend React (5 pages) et persistance SQLite. Projet réalisé dans le cadre de la Licence 3 SRT.</p>
+            <div class="tech-tags">
+              <span>Python</span><span>YOLO</span><span>FastAPI</span><span>React</span><span>SQLite</span>
+            </div>
+            <a class="project-link" href="https://github.com/elmatub/betail-securite-v2" target="_blank" rel="noopener"><i class="fab fa-github"></i> Voir le code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-status status-done"><i class="fas fa-check"></i> Réalisé</div>
+          <div class="project-content">
+            <h3>TrafiSen</h3>
+            <p class="project-date">Monitoring de trafic réseau</p>
+            <p>Outil d'analyse des flux réseau pensé pour détecter les anomalies de trafic et identifier les axes d'optimisation de performance sur une infrastructure.</p>
+            <div class="tech-tags">
+              <span>Réseaux</span><span>Monitoring</span><span>Analyse de trafic</span>
+            </div>
+            <a class="project-link" href="https://github.com/elmatub/TrafiSen-v2" target="_blank" rel="noopener"><i class="fab fa-github"></i> Voir le code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-status status-done"><i class="fas fa-check"></i> Réalisé</div>
+          <div class="project-content">
+            <h3>VoiceAI Pro</h3>
+            <p class="project-date">Plateforme SaaS de téléphonie IA</p>
+            <p>Plateforme complète de téléphonie pilotée par IA : API Gateway, dashboard, services ASR/TTS/conversation, PostgreSQL et Redis, le tout orchestré via Docker Compose. Intégration Twilio pour la gestion des appels entrants.</p>
+            <div class="tech-tags">
+              <span>Docker Compose</span><span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>Twilio</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="documents">
+    <div class="container">
+      <h2>CV, Certificats & Documents</h2>
+      <p class="section-intro">CV à jour et certifications obtenues, consultables et téléchargeables directement.</p>
+
+      <div class="cv-card">
+        <div class="cv-card-text">
+          <h3><i class="fas fa-file-arrow-down"></i> Curriculum Vitae</h3>
+          <p>Version PDF complète, prête pour candidature et recrutement.</p>
+        </div>
+        <a class="btn btn-doc" href="/documents/CV_EL_HADJI_MAMADOU_NDIAYE.pdf" target="_blank" rel="noopener">Télécharger le CV</a>
+      </div>
+
+      <h3 class="certs-title">Certifications</h3>
+      <div class="certs-grid">
+
+        <article class="cert-card">
+          <i class="fas fa-network-wired cert-icon"></i>
+          <h4>Notions de base sur les réseaux</h4>
+          <p class="cert-issuer">Cisco Networking Academy</p>
+          <a class="cert-link" href="/documents/Certificats/notions-de-base-reseaux.pdf" target="_blank" rel="noopener">Voir le certificat <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="cert-card">
+          <i class="fas fa-ethernet cert-icon"></i>
+          <h4>Network Addressing and Basic Troubleshooting</h4>
+          <p class="cert-issuer">Cisco Networking Academy</p>
+          <a class="cert-link" href="/documents/Certificats/network-addressing-and-basic.pdf" target="_blank" rel="noopener">Voir le certificat <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="cert-card">
+          <i class="fas fa-server cert-icon"></i>
+          <h4>Équipements réseau et Configuration</h4>
+          <p class="cert-issuer">Cisco Networking Academy</p>
+          <a class="cert-link" href="/documents/Certificats/equipements-reseau-configuration.pdf" target="_blank" rel="noopener">Voir le certificat <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="cert-card">
+          <i class="fas fa-shield-halved cert-icon"></i>
+          <h4>Défense du réseau</h4>
+          <p class="cert-issuer">Cisco Networking Academy</p>
+          <a class="cert-link" href="/documents/Certificats/defense-du-reseau.pdf" target="_blank" rel="noopener">Voir le certificat <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="cert-card">
+          <i class="fas fa-lock cert-icon"></i>
+          <h4>Introduction à la cybersécurité</h4>
+          <p class="cert-issuer">Cisco Networking Academy</p>
+          <a class="cert-link" href="/documents/Certificats/introduction-cybersecurite.pdf" target="_blank" rel="noopener">Voir le certificat <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="cert-card">
+          <i class="fas fa-user-shield cert-icon"></i>
+          <h4>Sécurité des terminaux</h4>
+          <p class="cert-issuer">Cisco Networking Academy</p>
+          <a class="cert-link" href="/documents/Certificats/securite-des-terminaux.pdf" target="_blank" rel="noopener">Voir le certificat <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="cert-card">
+          <i class="fas fa-user-secret cert-icon"></i>
+          <h4>Ethical Hacker</h4>
+          <p class="cert-issuer">Cisco Networking Academy</p>
+          <a class="cert-link" href="/documents/Certificats/ethical-hacker.pdf" target="_blank" rel="noopener">Voir le certificat <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="cert-card">
+          <i class="fas fa-microchip cert-icon"></i>
+          <h4>Introduction à l'IoT (IdO)</h4>
+          <p class="cert-issuer">Cisco Networking Academy</p>
+          <a class="cert-link" href="/documents/Certificats/introduction-iot.pdf" target="_blank" rel="noopener">Voir le certificat <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="cert-card">
+          <i class="fab fa-python cert-icon"></i>
+          <h4>Python Essentials 1</h4>
+          <p class="cert-issuer">Cisco Networking Academy</p>
+          <a class="cert-link" href="/documents/Certificats/python-essentials-1.pdf" target="_blank" rel="noopener">Voir le certificat <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div class="container">
+      <h2>Témoignages</h2>
+      <p class="section-intro">Cette section est en cours de constitution. Vous avez travaillé avec moi ? Laissez un témoignage ci-dessous.</p>
+
+      <form id="testimonialForm" class="testimonial-form">
+        <div class="form-row">
+          <label for="name">Nom complet</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="form-row">
+          <label for="role">Fonction / Entreprise</label>
+          <input id="role" name="role" type="text" required>
+        </div>
+        <div class="form-row">
+          <label for="rating">Note</label>
+          <select id="rating" name="rating" required>
+            <option value="">Choisissez une note</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Très bien</option>
+            <option value="3">3 - Bien</option>
+            <option value="2">2 - Moyen</option>
+            <option value="1">1 - À améliorer</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message">Témoignage</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Publier le témoignage</button>
+        <p class="form-note">Connexion en cours...</p>
+      </form>
+
+      <div class="testimonials-grid" id="testimonialsGrid"></div>
+      <p class="empty-state" id="emptyTestimonials">Aucun témoignage publié pour le moment.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p><a href="mailto:elhadjimamadoundiaye02@esp.sn">elhadjimamadoundiaye02@esp.sn</a></p>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <h3>Téléphone</h3>
+          <p><a href="tel:+221783104684">+221 78 310 46 84</a></p>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-location-dot"></i>
+          <h3>Adresse</h3>
+          <p>Dakar, Sénégal</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/el-hadji-mamadou-ndiaye-293684285/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/elmatub" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+      <p>© 2026 El Hadji Mamadou Ndiaye - Portfolio professionnel.</p>
+    </div>
+  </footer>
+
+  <div id="profileModal" class="modal">
+    <button class="modal-close" aria-label="Fermer la fenêtre">&times;</button>
+    <div class="modal-content"><img src="profile.jpeg" alt="Photo de profil agrandie"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
