@@ -178,7 +178,39 @@ nav a:hover {
   background: #f1f5f9;
 }
 
-.about-grid {
+.about-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.6rem;
+}
+
+.about-exp-title {
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  color: var(--dark);
+}
+
+.about-exp-list {
+  padding-left: 1.2rem;
+  color: #334155;
+  line-height: 1.7;
+}
+
+.about-exp-list li {
+  margin-bottom: 0.3rem;
+}
+
+.about-objective {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: #eff6ff;
+  border-left: 3px solid var(--secondary);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #1e3a5f;
+}
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1.3rem;
@@ -213,7 +245,12 @@ nav a:hover {
   color: #334155;
 }
 
-.skills-grid,
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1rem;
+}
+
 .projects-grid,
 .goals-grid,
 .contact-grid,
@@ -298,7 +335,71 @@ nav a:hover {
   border-radius: 999px;
 }
 
-.project-category {
+/* ── Projets pleine largeur ── */
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card-full {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 1.4rem 1.6rem;
+  transition: box-shadow 0.2s;
+}
+
+.project-card-full:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+}
+
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.project-card-header h3 {
+  margin: 0.3rem 0 0.1rem;
+  font-size: 1.1rem;
+}
+
+.project-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.9rem;
+}
+
+.project-card-footer .skills-acquired {
+  flex: 1;
+  min-width: 260px;
+  margin-top: 0;
+}
+
+.project-card-footer .project-actions {
+  flex-shrink: 0;
+  margin-top: 0;
+  align-self: flex-end;
+}
+
+.status-stage {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.project-card-full .tech-tags {
+  margin-top: 0.2rem;
+  justify-content: flex-end;
+}
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--primary);
@@ -335,8 +436,55 @@ nav a:hover {
   background: #fde68a;
 }
 
-.link-github {
-  background: #f0fdf4;
+.skills-acquired {
+  margin-top: 0.9rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+
+.skills-label {
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.skills-acquired ul {
+  padding-left: 1.1rem;
+  margin: 0;
+}
+
+.skills-acquired li {
+  font-size: 0.83rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 0.15rem;
+}
+
+.link-drive {
+  background: #fdf4ff;
+  color: #7e22ce;
+  border: 1px solid #e9d5ff;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.link-drive:hover {
+  background: #e9d5ff;
+}
   color: #15803d;
   border: 1px solid #bbf7d0;
   padding: 0.3rem 0.75rem;
