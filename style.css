@@ -335,7 +335,71 @@ nav a:hover {
   border-radius: 999px;
 }
 
-.project-category {
+/* ── Projets pleine largeur ── */
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card-full {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 1.4rem 1.6rem;
+  transition: box-shadow 0.2s;
+}
+
+.project-card-full:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+}
+
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.project-card-header h3 {
+  margin: 0.3rem 0 0.1rem;
+  font-size: 1.1rem;
+}
+
+.project-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.9rem;
+}
+
+.project-card-footer .skills-acquired {
+  flex: 1;
+  min-width: 260px;
+  margin-top: 0;
+}
+
+.project-card-footer .project-actions {
+  flex-shrink: 0;
+  margin-top: 0;
+  align-self: flex-end;
+}
+
+.status-stage {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.project-card-full .tech-tags {
+  margin-top: 0.2rem;
+  justify-content: flex-end;
+}
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--primary);
