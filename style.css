@@ -372,8 +372,55 @@ nav a:hover {
   background: #fde68a;
 }
 
-.link-github {
-  background: #f0fdf4;
+.skills-acquired {
+  margin-top: 0.9rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+
+.skills-label {
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.skills-acquired ul {
+  padding-left: 1.1rem;
+  margin: 0;
+}
+
+.skills-acquired li {
+  font-size: 0.83rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 0.15rem;
+}
+
+.link-drive {
+  background: #fdf4ff;
+  color: #7e22ce;
+  border: 1px solid #e9d5ff;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.link-drive:hover {
+  background: #e9d5ff;
+}
   color: #15803d;
   border: 1px solid #bbf7d0;
   padding: 0.3rem 0.75rem;
