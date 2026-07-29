@@ -11,7 +11,7 @@
 // 1. Créez un compte gratuit sur https://formspree.io
 // 2. Créez un formulaire, copiez son ID (ex: "abcdwxyz")
 // 3. Collez-le ci-dessous à la place de "YOUR_FORM_ID"
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xqerjdrr";
 
 const HERO_TAGLINES = [
   "Je transforme des infrastructures complexes en systèmes sécurisés et automatisés.",
