@@ -6,6 +6,9 @@
   <title>El Hadji Mamadou Ndiaye | Portfolio Cybersécurité</title>
   <meta name="description" content="Portfolio professionnel de El Hadji Mamadou Ndiaye, ingénieur réseaux, systèmes et cybersécurité.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -44,6 +47,7 @@
     <div class="container">
       <ul>
         <li><a href="#about">Profil</a></li>
+        <li><a href="#experience">Expérience</a></li>
         <li><a href="#skills">Compétences</a></li>
         <li><a href="#projects">Projets Clés</a></li>
         <li><a href="#documents">CV/Certificats</a></li>
@@ -55,35 +59,111 @@
 
   <section id="about">
     <div class="container">
+      <p class="section-eyebrow reveal">Qui suis-je</p>
       <h2 class="reveal">Profil Professionnel</h2>
       <div class="about-grid reveal">
         <div class="about-card">
           <p class="about-title">Ingénieur Systèmes, Réseaux &amp; Sécurité (SRT – ESP/UCAD)</p>
           <p>Spécialisé dans l'ingénierie des infrastructures sécurisées, l'administration système Linux bas niveau et le déploiement de solutions d'IA appliquées.</p>
           <p>Forte expertise sur l'ensemble de la chaîne technique : de l'isolation noyau Linux (Namespaces, cgroups, conteneurisation interne) au déploiement d'architectures réseau complexes multi-sites (Routing/Switching, VPN IPsec, IAM RADIUS/LDAP, VoIP/ToIP), jusqu'à l'intégration d'architectures RAG et de modèles NLP multilingues.</p>
+
+          <div class="domain-cards reveal reveal-stagger">
+            <div class="domain-card">
+              <i class="fas fa-terminal"></i>
+              <span>Linux</span>
+            </div>
+            <div class="domain-card">
+              <i class="fas fa-network-wired"></i>
+              <span>Réseaux</span>
+            </div>
+            <div class="domain-card">
+              <i class="fas fa-shield-halved"></i>
+              <span>Sécurité</span>
+            </div>
+            <div class="domain-card">
+              <i class="fas fa-brain"></i>
+              <span>IA</span>
+            </div>
+            <div class="domain-card">
+              <i class="fas fa-cubes"></i>
+              <span>DevOps</span>
+            </div>
+          </div>
+
           <p class="about-exp-title">Expérience terrain</p>
           <ul class="about-exp-list">
             <li><strong>ISFAD (UCAD)</strong> : Ingénierie et déploiement de solutions RAG (Retrieval-Augmented Generation) combinant bases vectorielles et LLM appliqués.</li>
             <li><strong>SAED</strong> : Déploiement opérationnel et sécurisation d'une infrastructure réseau d'entreprise complète.</li>
           </ul>
-          <p class="about-objective"><i class="fas fa-bullseye"></i> <strong>Objectif :</strong> Rejoindre une équipe technique ambitieuse pour concevoir, automatiser et sécuriser des infrastructures d'information à haute disponibilité.</p>
+
+          <div class="objective-card">
+            <i class="fas fa-bullseye"></i>
+            <div>
+              <p class="objective-label">Objectif</p>
+              <p>Rejoindre une équipe technique ambitieuse pour concevoir, automatiser et sécuriser des infrastructures d'information à haute disponibilité.</p>
+            </div>
+          </div>
         </div>
         <aside class="highlight-card">
           <h3>Points forts</h3>
           <ul>
-            <li>Maîtrise du bas niveau Linux (namespaces, cgroups, chroot)</li>
-            <li>Déploiement d'infrastructures réseau réelles (stage SAED)</li>
-            <li>IA appliquée : NLP multilingue (FR/Wolof), vision par ordinateur</li>
-            <li>Développement full-stack et DevOps (Docker, FastAPI, React)</li>
-            <li>Autonomie, rigueur et livraison de projets de bout en bout</li>
+            <li><i class="fas fa-check"></i> Maîtrise du bas niveau Linux (namespaces, cgroups, chroot)</li>
+            <li><i class="fas fa-check"></i> Déploiement d'infrastructures réseau réelles (stage SAED)</li>
+            <li><i class="fas fa-check"></i> IA appliquée : NLP multilingue (FR/Wolof), vision par ordinateur</li>
+            <li><i class="fas fa-check"></i> Développement full-stack et DevOps (Docker, FastAPI, React)</li>
+            <li><i class="fas fa-check"></i> Autonomie, rigueur et livraison de projets de bout en bout</li>
           </ul>
         </aside>
       </div>
     </div>
   </section>
 
+  <section id="experience">
+    <div class="container">
+      <p class="section-eyebrow reveal">Parcours</p>
+      <h2 class="reveal">Expérience Professionnelle</h2>
+      <div class="timeline reveal reveal-stagger">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3>Stagiaire — Chatbot intelligent RAG</h3>
+              <span class="timeline-date">Mai – Juil. 2026</span>
+            </div>
+            <p class="timeline-org">ISFAD, Université Cheikh Anta Diop (UCAD) — Dakar</p>
+            <p>Conception et développement d'un chatbot intelligent basé sur le RAG (Retrieval-Augmented Generation) pour le support des étudiants et enseignants de l'ISFAD : base de connaissances vectorisée, pipeline de récupération/génération et réponses contextualisées.</p>
+            <div class="tech-tags">
+              <span class="tag">Python</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">ChromaDB</span>
+              <span class="tag">RAG</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3>Stagiaire Administrateur Réseaux &amp; Télécoms</h3>
+              <span class="timeline-date">Mai – Sept. 2025</span>
+            </div>
+            <p class="timeline-org">SAED — Saint-Louis, Sénégal</p>
+            <p>Déploiement d'une infrastructure réseau multi-site avec tunnels VPN IPsec sécurisés, mise en place de la téléphonie IP sur PABX Asterisk, et support technique Niveau 2 en environnement de production réel.</p>
+            <div class="tech-tags">
+              <span class="tag">VPN IPsec</span>
+              <span class="tag">Cisco</span>
+              <span class="tag">Asterisk</span>
+              <span class="tag">Réseau multi-site</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="skills">
     <div class="container">
+      <p class="section-eyebrow reveal">Boîte à outils</p>
       <h2 class="reveal">Compétences Techniques</h2>
       <div class="skills-grid reveal reveal-stagger">
 
@@ -128,6 +208,7 @@
 
   <section id="projects">
     <div class="container">
+      <p class="section-eyebrow reveal">Réalisations</p>
       <h2 class="reveal">Projets Clés</h2>
       <p class="section-intro">Projets académiques, personnels et professionnels — systèmes, réseaux, IA et développement full-stack.</p>
 
@@ -471,6 +552,7 @@
 
   <section id="documents">
     <div class="container">
+      <p class="section-eyebrow reveal">Preuves</p>
       <h2 class="reveal">CV, Certificats & Documents</h2>
       <p class="section-intro">CV à jour et certifications obtenues, consultables et téléchargeables directement.</p>
 
@@ -554,6 +636,7 @@
 
   <section id="testimonials">
     <div class="container">
+      <p class="section-eyebrow reveal">Retours</p>
       <h2 class="reveal">Témoignages</h2>
       <p class="section-intro">Vous avez travaillé avec moi (stage, projet académique, projet de groupe) ? Votre avis compte et aide les recruteurs à mieux me connaître.</p>
 
@@ -608,6 +691,7 @@
 
   <section id="contact">
     <div class="container">
+      <p class="section-eyebrow reveal">Prenons contact</p>
       <h2 class="reveal">Contact</h2>
       <div class="contact-grid reveal reveal-stagger">
         <div class="contact-item">
@@ -631,11 +715,20 @@
 
   <footer>
     <div class="container">
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/el-hadji-mamadou-ndiaye-293684285/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/elmatub" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-name">El Hadji Mamadou Ndiaye</p>
+          <p class="availability-badge"><span class="dot"></span> Disponible pour un stage / une alternance</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/elhadjimamadoundiaye02-png" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/el-hadji-mamadou-ndiaye-293684285/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="mailto:elhadjimamadoundiaye02@esp.sn"><i class="fas fa-envelope"></i> Email</a>
+          <a href="tel:+221783104684"><i class="fas fa-phone"></i> Téléphone</a>
+          <a href="documents/CV_EL_HADJI_MAMADOU_NDIAYE.pdf" target="_blank"><i class="fas fa-file-arrow-down"></i> CV</a>
+        </div>
       </div>
-      <p>© 2026 El Hadji Mamadou Ndiaye - Portfolio professionnel.</p>
+      <p class="footer-copy">© 2026 El Hadji Mamadou Ndiaye — Portfolio professionnel.</p>
     </div>
   </footer>
 
