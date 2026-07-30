@@ -757,11 +757,42 @@ nav a:hover {
   border-radius: 14px;
   box-shadow: var(--shadow);
   padding: 1.4rem 1.6rem;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.3s var(--ease), transform 0.3s var(--ease), border-color 0.3s var(--ease);
 }
 
 .project-card-full:hover {
-  box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(37, 99, 235, 0.3);
+  transform: translateY(-4px);
+}
+
+.project-card-full.has-image {
+  padding: 0;
+  overflow: hidden;
+}
+
+.project-thumb {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-card-full.has-image .project-card-header,
+.project-card-full.has-image > p,
+.project-card-full.has-image .project-card-footer {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+.project-card-full.has-image .project-card-header {
+  padding-top: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-card-full.has-image .project-card-footer {
+  padding-bottom: 1.4rem;
 }
 
 .project-card-header {
