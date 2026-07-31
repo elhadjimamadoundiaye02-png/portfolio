@@ -34,7 +34,7 @@
           <a href="#documents" class="btn btn-ghost">CV & Certificats</a>
         </div>
         <div class="stats-strip">
-          <div class="stat-item"><div class="stat-number" data-count="12">0</div><div class="stat-label">Projets réalisés</div></div>
+          <div class="stat-item"><div class="stat-number" data-count="13">0</div><div class="stat-label">Projets réalisés</div></div>
           <div class="stat-item"><div class="stat-number" data-count="9">0</div><div class="stat-label">Certifications Cisco</div></div>
           <div class="stat-item"><div class="stat-number" data-count="2">0</div><div class="stat-label">Stages effectués</div></div>
           <div class="stat-item"><div class="stat-number" data-count="20">0</div><div class="stat-label">Technologies maîtrisées</div></div>
@@ -310,7 +310,8 @@
           </div>
         </article>
 
-        <article class="project-card-full">
+        <article class="project-card-full has-image">
+          <img class="project-thumb" src="documents/images/labos-reseaux-topologie.jpg" alt="Topologie réseau d'entreprise GNS3 avec NAT, DMZ, DHCP, serveur Web et accès Internet">
           <div class="project-card-header">
             <div>
               <div class="project-status status-done"><i class="fas fa-check"></i> Réalisé</div>
@@ -333,6 +334,7 @@
               </ul>
             </div>
             <div class="project-actions">
+              <button type="button" class="project-link link-video" data-video="documents/videos/labos-reseaux-demo.mp4" data-title="Démo — Labos Réseaux Multi-Topologies"><i class="fas fa-play"></i> Démo vidéo (1 min)</button>
               <a class="project-link link-report" href="documents/Rapports/rapport-virtualisation-reseau.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Rapport</a>
               <a class="project-link link-private" href="mailto:elhadjimamadoundiaye02@esp.sn?subject=Demande%20d%27acces%20au%20code%20-%20Labos%20R%C3%A9seaux%20Multi-Topologies" title="Depot prive - cliquez pour demander l'acces"><i class="fas fa-lock"></i> Code privé — sur demande</a>
             </div>
@@ -401,6 +403,35 @@
       <!-- ═══ CATÉGORIE 3 : IA & DÉVELOPPEMENT ═══ -->
       <h3 class="project-category"><i class="fas fa-brain"></i> IA & Développement Full-Stack</h3>
       <div class="projects-list reveal">
+
+        <article class="project-card-full">
+          <div class="project-card-header">
+            <div>
+              <div class="project-status status-done"><i class="fas fa-check"></i> Réalisé</div>
+              <h3>Brassou Transport — Réservation de voyage</h3>
+              <p class="project-date">Plateforme de réservation & suivi de trajet en temps réel</p>
+            </div>
+            <div class="tech-tags">
+              <span>HTML/CSS/JS</span><span>Géolocalisation</span><span>Mobile Money</span><span>UX/UI</span>
+            </div>
+          </div>
+          <p>Application web de réservation de voyage pour le département de Goudomp (Sénégal) : recherche de trajets multi-villes, réservation en ligne, suivi de trajet en temps réel avec vue passager et vue chauffeur, tableau de bord chauffeur (embarquement, navigation, statistiques), et paiement mobile (Wave, Orange Money, Free Money).</p>
+          <div class="project-card-footer">
+            <div class="skills-acquired">
+              <p class="skills-label"><i class="fas fa-graduation-cap"></i> Compétences acquises</p>
+              <ul>
+                <li>Conception d'un parcours de réservation complet : recherche, sélection, confirmation</li>
+                <li>Interfaces différenciées par rôle : espace passager et tableau de bord chauffeur</li>
+                <li>Intégration des moyens de paiement mobile locaux (Wave, Orange Money, Free Money)</li>
+                <li>UX adaptée à un usage réel local : horaires, tarifs, conditions de transport</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a class="project-link link-demo" href="https://elhadjimamadoundiaye02-png.github.io/brassou-transport/" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i> Voir la démo</a>
+              <a class="project-link link-private" href="mailto:elhadjimamadoundiaye02@esp.sn?subject=Demande%20d%27acces%20au%20code%20-%20Brassou%20Transport" title="Dépôt privé - cliquez pour demander l'accès"><i class="fas fa-lock"></i> Code privé — sur demande</a>
+            </div>
+          </div>
+        </article>
 
         <article class="project-card-full">
           <div class="project-card-header">
@@ -765,6 +796,14 @@
   <div id="profileModal" class="modal">
     <button class="modal-close" aria-label="Fermer la fenêtre">&times;</button>
     <div class="modal-content"><img src="profile.jpeg" alt="Photo de profil agrandie"></div>
+  </div>
+
+  <div id="videoModal" class="modal video-modal">
+    <button class="modal-close" data-modal-close="video" aria-label="Fermer la vidéo">&times;</button>
+    <div class="modal-content video-modal-content">
+      <p id="videoModalTitle" class="video-modal-title"></p>
+      <video id="videoModalPlayer" controls playsinline></video>
+    </div>
   </div>
 
   <button id="backToTop" class="back-to-top" aria-label="Retour en haut de page" title="Retour en haut">
