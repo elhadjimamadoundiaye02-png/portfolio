@@ -35,7 +35,7 @@ Portfolio professionnel **100% statique**, hébergé sur **GitHub Pages**.
 2. Créez un formulaire, copiez son ID (ex. `abcdwxyz`)
 3. Dans `script.js`, remplacez :
    ```js
-   const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+   const FORMSPREE_ENDPOINT = "https://formspree.io/f/xqerjdrr";
    ```
    par votre propre endpoint.
 
