@@ -34,7 +34,7 @@
           <a href="#documents" class="btn btn-ghost">CV & Certificats</a>
         </div>
         <div class="stats-strip">
-          <div class="stat-item"><div class="stat-number" data-count="13">0</div><div class="stat-label">Projets réalisés</div></div>
+          <div class="stat-item"><div class="stat-number" data-count="14">0</div><div class="stat-label">Projets réalisés</div></div>
           <div class="stat-item"><div class="stat-number" data-count="9">0</div><div class="stat-label">Certifications Cisco</div></div>
           <div class="stat-item"><div class="stat-number" data-count="2">0</div><div class="stat-label">Stages effectués</div></div>
           <div class="stat-item"><div class="stat-number" data-count="20">0</div><div class="stat-label">Technologies maîtrisées</div></div>
@@ -216,6 +216,36 @@
       <h3 class="project-category"><i class="fas fa-server"></i> Systèmes, Sécurité & Conteneurisation</h3>
       <div class="projects-list reveal">
 
+        <article class="project-card-full has-image">
+          <img class="project-thumb" src="documents/images/cleanpipe-architecture-sfc.jpg" alt="Architecture NFV/SFC CleanPipe sur Kubernetes avec chaînage Client → FRR → Suricata → Nginx via Multus CNI">
+          <div class="project-card-header">
+            <div>
+              <div class="project-status status-done"><i class="fas fa-check"></i> Réalisé</div>
+              <h3>CleanPipe — Passerelle de Sécurité Cloud-Native</h3>
+              <p class="project-date">Projet SDN/SDR/NFV — ESP/UCAD Dakar · 2026</p>
+            </div>
+            <div class="tech-tags">
+              <span>Kubernetes (K3s)</span><span>Multus CNI</span><span>NFV/SFC</span><span>Suricata IDS</span><span>FRR</span><span>Nginx</span>
+            </div>
+          </div>
+          <p>Déploiement d'une passerelle de sécurité cloud-native sur cluster Kubernetes (K3s) implémentant une architecture NFV conforme ETSI avec chaînage de services (SFC) : le trafic est forcé à traverser successivement un pare-feu (FRR, filtrage ACL et blocage SSH), une sonde IDS (Suricata, inspection profonde des paquets et détection d'intrusion) puis un serveur web (Nginx), chaque fonction réseau étant un pod isolé interconnecté via des interfaces réseau dédiées Multus CNI et des bridges Linux. Validation de bout en bout par tests de routage forcé, simulation d'attaque détectée par l'IDS, et tableau de bord de supervision temps réel.</p>
+          <div class="project-card-footer">
+            <div class="skills-acquired">
+              <p class="skills-label"><i class="fas fa-graduation-cap"></i> Compétences acquises</p>
+              <ul>
+                <li>Architecture NFV/SFC conforme ETSI : chaînage de fonctions réseau conteneurisées (CNF)</li>
+                <li>Multi-interfaçage réseau avancé avec Multus CNI et segmentation par bridges Linux</li>
+                <li>Durcissement et filtrage : règles ACL/iptables, routage forcé, forwarding IPv4 noyau</li>
+                <li>Détection d'intrusion (IDS/DPI) avec Suricata et validation par simulation d'attaque</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a class="project-link link-report" href="documents/Rapports/rapport-cleanpipe-deploiement.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Rapport</a>
+              <a class="project-link link-private" href="mailto:elhadjimamadoundiaye02@esp.sn?subject=Demande%20d%27acces%20au%20code%20-%20CleanPipe" title="Dépôt privé - cliquez pour demander l'accès"><i class="fas fa-lock"></i> Code privé — sur demande</a>
+            </div>
+          </div>
+        </article>
+
         <article class="project-card-full">
           <div class="project-card-header">
             <div>
@@ -304,6 +334,7 @@
               </ul>
             </div>
             <div class="project-actions">
+              <button type="button" class="project-link link-video" data-video="documents/videos/nebula-mesh-vpn-demo.mp4" data-title="Démo — Nebula Mesh VPN Zero-Trust"><i class="fas fa-play"></i> Démo vidéo (1 min)</button>
               <a class="project-link link-report" href="documents/Rapports/rapport-nebula-vpn-mesh.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Rapport</a>
               <a class="project-link link-private" href="mailto:elhadjimamadoundiaye02@esp.sn?subject=Demande%20d%27acces%20au%20code%20-%20Nebula%20Mesh%20VPN%20Zero-Trust" title="Dépôt privé - cliquez pour demander l'accès"><i class="fas fa-lock"></i> Code privé — sur demande</a>
             </div>
@@ -334,7 +365,6 @@
               </ul>
             </div>
             <div class="project-actions">
-              <button type="button" class="project-link link-video" data-video="documents/videos/labos-reseaux-demo.mp4" data-title="Démo — Labos Réseaux Multi-Topologies"><i class="fas fa-play"></i> Démo vidéo (1 min)</button>
               <a class="project-link link-report" href="documents/Rapports/rapport-virtualisation-reseau.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Rapport</a>
               <a class="project-link link-private" href="mailto:elhadjimamadoundiaye02@esp.sn?subject=Demande%20d%27acces%20au%20code%20-%20Labos%20R%C3%A9seaux%20Multi-Topologies" title="Depot prive - cliquez pour demander l'acces"><i class="fas fa-lock"></i> Code privé — sur demande</a>
             </div>
