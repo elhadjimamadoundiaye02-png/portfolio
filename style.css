@@ -970,6 +970,71 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
+.link-demo {
+  background: #dbeafe;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.link-demo:hover {
+  background: #bfdbfe;
+  transform: translateY(-2px);
+}
+
+.link-video {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.link-video:hover {
+  background: #fecaca;
+  transform: translateY(-2px);
+}
+
+.video-modal-content {
+  width: min(880px, 92vw);
+  background: transparent;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: stretch;
+}
+
+.video-modal-title {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+#videoModalPlayer {
+  width: 100%;
+  max-height: 78vh;
+  border-radius: 12px;
+  background: #000;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
 .project-content {
   padding: 1rem 1.1rem 1.2rem;
 }
