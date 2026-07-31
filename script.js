@@ -11,7 +11,7 @@
 // 1. Créez un compte gratuit sur https://formspree.io
 // 2. Créez un formulaire, copiez son ID (ex: "abcdwxyz")
 // 3. Collez-le ci-dessous à la place de "YOUR_FORM_ID"
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/xqerjdrr";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
 
 const HERO_TAGLINES = [
   "Je transforme des infrastructures complexes en systèmes sécurisés et automatisés.",
@@ -22,6 +22,7 @@ const HERO_TAGLINES = [
 document.addEventListener("DOMContentLoaded", () => {
   setupSmoothScroll();
   setupProfileModal();
+  setupVideoModal();
   setupNavScrollEffects();
   setupHeroTypewriter();
   setupStatsCounter();
@@ -58,7 +59,7 @@ function setupSmoothScroll() {
 function setupProfileModal() {
   const profileImg = document.getElementById("profileImg");
   const modal = document.getElementById("profileModal");
-  const closeBtn = document.querySelector(".modal-close");
+  const closeBtn = modal ? modal.querySelector(".modal-close") : null;
 
   if (!profileImg || !modal || !closeBtn) return;
 
@@ -82,6 +83,51 @@ function setupProfileModal() {
   function closeModal() {
     modal.classList.remove("show");
     document.body.style.overflow = "";
+  }
+}
+
+// ---------------------------------------------------------------
+// Modale vidéo — démos de projets (bouton "Démo vidéo")
+// ---------------------------------------------------------------
+function setupVideoModal() {
+  const modal = document.getElementById("videoModal");
+  const player = document.getElementById("videoModalPlayer");
+  const titleEl = document.getElementById("videoModalTitle");
+  const closeBtn = modal ? modal.querySelector(".modal-close") : null;
+  const triggers = document.querySelectorAll(".link-video[data-video]");
+
+  if (!modal || !player || !closeBtn || triggers.length === 0) return;
+
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      const src = trigger.dataset.video;
+      const title = trigger.dataset.title || "";
+      if (titleEl) titleEl.textContent = title;
+      player.src = src;
+      modal.classList.add("show");
+      document.body.style.overflow = "hidden";
+      player.play().catch(() => {});
+    });
+  });
+
+  closeBtn.addEventListener("click", closeVideoModal);
+
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) closeVideoModal();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && modal.classList.contains("show")) {
+      closeVideoModal();
+    }
+  });
+
+  function closeVideoModal() {
+    modal.classList.remove("show");
+    document.body.style.overflow = "";
+    player.pause();
+    player.removeAttribute("src");
+    player.load();
   }
 }
 
