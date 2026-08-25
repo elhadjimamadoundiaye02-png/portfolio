@@ -774,8 +774,11 @@ nav a:hover {
 .project-thumb {
   width: 100%;
   display: block;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  aspect-ratio: unset;
+  max-height: 320px;
+  object-fit: contain;
+  object-position: center;
+  background: #f0f4ff;
   border-bottom: 1px solid var(--border);
 }
 
