@@ -776,7 +776,7 @@ nav a:hover {
   display: block;
   height: 260px;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
   border-bottom: 1px solid var(--border);
 }
 
