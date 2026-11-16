@@ -50,6 +50,7 @@
         <li><a href="#experience">Expérience</a></li>
         <li><a href="#skills">Compétences</a></li>
         <li><a href="#projects">Projets Clés</a></li>
+        <li><a href="#research">Recherche</a></li>
         <li><a href="#documents">CV/Certificats</a></li>
         <li><a href="#testimonials">Témoignages</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -637,8 +638,116 @@
             </div>
             <div class="project-actions">
               <a class="project-link link-report" href="documents/Rapports/rapport-cleanfootprint.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Rapport</a>
-              <a class="project-link link-drive" href="https://drive.google.com/drive/folders/https://drive.google.com/drive/folders/1fi6eJReJivfWCCg2d_wPaxwi0yfSrHfx?usp=sharing" target="_blank" rel="noopener"><i class="fab fa-google-drive"></i> Demander l'accès</a>
+              <a class="project-link link-drive" href="https://drive.google.com/drive/folders/1fi6eJReJivfWCCg2d_wPaxwi0yfSrHfx?usp=sharing" target="_blank" rel="noopener"><i class="fab fa-google-drive"></i> Demander l'accès</a>
             </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECTION RECHERCHE
+       Image : documents/images/5g-core-cloud-native.jpg
+       PDF   : documents/Recherche/proposition-recherche-5g-zero-trust.pdf
+       ═══════════════════════════════════════════════════════════ -->
+  <section id="research">
+    <div class="container">
+      <p class="section-eyebrow reveal">Recherche</p>
+      <h2 class="reveal">Travaux de Recherche</h2>
+      <p class="section-intro">Axe de recherche en sécurité des réseaux 5G : une proposition de maîtrise rédigée et un article scientifique en cours de rédaction, dans le prolongement de mon prototype CleanPipe.</p>
+
+      <!-- Bandeau : image + question de recherche -->
+      <div class="research-hero reveal">
+        <figure class="research-figure">
+          <img src="documents/images/5g-core-cloud-native.jpg" alt="Illustration d'un cœur 5G cloud-native : microservices, conteneurs et Kubernetes, orchestration de services, intégration continue et supervision" width="1400" height="929" loading="lazy">
+          <figcaption>Illustration — cœur 5G cloud-native : microservices, conteneurs &amp; Kubernetes, orchestration, supervision</figcaption>
+        </figure>
+        <div class="research-hero-text">
+          <span class="research-kicker"><i class="fas fa-flask"></i> Projet de maîtrise · Génie électrique (2203)</span>
+          <h3>Sécuriser les cœurs 5G cloud-native par une architecture Zero-Trust</h3>
+          <p class="research-question"><strong>Question centrale :</strong> comment implémenter un modèle Zero-Trust dans un cœur 5G cloud-native pour garantir l'isolation des fonctions réseau et l'intégrité du trafic, sans altérer la latence ni le débit du plan utilisateur (UPF) ?</p>
+          <ul class="research-points">
+            <li><i class="fas fa-cubes"></i><span><strong>Isolation</strong> — quelles vulnérabilités l'orchestration de fonctions réseau conteneurisées sur Kubernetes introduit-elle ?</span></li>
+            <li><i class="fas fa-microchip"></i><span><strong>eBPF</strong> — comment contrôler le comportement au niveau noyau sans dégrader le débit ni la latence de l'UPF ?</span></li>
+            <li><i class="fas fa-bolt"></i><span><strong>Réponse</strong> — comment automatiser la détection et la réponse aux incidents dans une infrastructure 5G distribuée ?</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feuille de route : du prototype à la maîtrise -->
+      <div class="research-roadmap reveal reveal-stagger">
+        <div class="roadmap-step done">
+          <div class="roadmap-icon"><i class="fas fa-check"></i></div>
+          <h4>CleanPipe</h4>
+          <p>Prototype NFV/SFC sur Kubernetes : pare-feu, IDS et serveur web chaînés.</p>
+          <span class="roadmap-state">Réalisé</span>
+        </div>
+        <div class="roadmap-step done">
+          <div class="roadmap-icon"><i class="fas fa-file-lines"></i></div>
+          <h4>Proposition de recherche</h4>
+          <p>Maîtrise en génie électrique, concentration génie informatique — août 2026.</p>
+          <span class="roadmap-state">Rédigée</span>
+        </div>
+        <div class="roadmap-step active">
+          <div class="roadmap-icon"><i class="fas fa-pen-nib"></i></div>
+          <h4>Article scientifique</h4>
+          <p>Architecture Zero Trust fondée sur eBPF pour cœurs 5G conteneurisés.</p>
+          <span class="roadmap-state">En rédaction</span>
+        </div>
+        <div class="roadmap-step">
+          <div class="roadmap-icon"><i class="fas fa-vial"></i></div>
+          <h4>Banc d'essai &amp; évaluation</h4>
+          <p>Mesures de latence/débit de l'UPF, taux de détection et surcoût.</p>
+          <span class="roadmap-state">À venir</span>
+        </div>
+      </div>
+
+      <!-- Les deux documents -->
+      <div class="research-grid reveal">
+
+        <article class="research-card">
+          <div class="project-status status-stage"><i class="fas fa-flask"></i> Proposition de recherche</div>
+          <h3>Sécurisation des cœurs de réseau 5G cloud-native : conception et évaluation d'une architecture Zero-Trust</h3>
+          <p class="project-date">Maîtrise en génie électrique (avec mémoire) — Août 2026</p>
+          <p>Proposition de recherche visant à concevoir et évaluer une architecture Zero-Trust pour des cœurs 5G conteneurisés. Elle couvre l'état de l'art (3GPP, ETSI, NIST), une méthodologie en six étapes sur deux ans, les scénarios d'attaque à tester et les critères d'évaluation, avec CleanPipe comme preuve de concept préliminaire et une attention particulière aux contraintes des opérateurs d'Afrique de l'Ouest.</p>
+          <div class="tech-tags">
+            <span>Zero-Trust</span><span>5G Core</span><span>Kubernetes</span><span>eBPF</span><span>UPF</span><span>NIST SP 800-207</span>
+          </div>
+          <div class="skills-acquired">
+            <p class="skills-label"><i class="fas fa-graduation-cap"></i> Compétences développées</p>
+            <ul>
+              <li>État de l'art de la sécurité 5G : 3GPP TS 33.501, ETSI NFV-SEC, NIST SP 800-207</li>
+              <li>Formulation d'une problématique, de questions de recherche et d'un plan méthodologique</li>
+              <li>Conception d'une évaluation quantitative : latence, débit, détection, faux positifs, surcoût</li>
+              <li>Positionnement d'un prototype (CleanPipe) comme socle d'un projet de mémoire</li>
+            </ul>
+          </div>
+          <div class="project-actions">
+            <a class="project-link link-report" href="documents/Recherche/proposition-recherche-5g-zero-trust.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Lire la proposition (PDF)</a>
+          </div>
+        </article>
+
+        <article class="research-card">
+          <div class="project-status status-progress"><i class="fas fa-pen-nib"></i> Article en cours de rédaction</div>
+          <h3>Sécurisation des cœurs 5G cloud-native par une architecture Zero Trust fondée sur eBPF : conception d'une preuve de concept</h3>
+          <p class="project-date">Article scientifique — ESP/UCAD · 2026 · non publié</p>
+          <p>Article présentant une architecture Zero Trust pour cœurs 5G conteneurisés : séparation des points de décision et d'application de politique (PDP/PEP), principe de chemin rapide / chemin lent pour protéger les performances de l'UPF, contrôle comportemental eBPF durci contre son propre détournement, et réponse graduée en boucle fermée. Il comprend un modèle de menace, cinq scénarios d'attaque et un protocole d'évaluation sur cinq configurations. L'évaluation expérimentale est en préparation : aucun résultat n'est encore publié.</p>
+          <div class="tech-tags">
+            <span>Zero Trust</span><span>eBPF/XDP</span><span>PDP/PEP</span><span>Micro-segmentation</span><span>Kubernetes</span>
+          </div>
+          <div class="skills-acquired">
+            <p class="skills-label"><i class="fas fa-graduation-cap"></i> Compétences développées</p>
+            <ul>
+              <li>Modélisation de menaces dans un cœur 5G conteneurisé (mouvement latéral, évasion de conteneur)</li>
+              <li>Sécurité eBPF/XDP : traitement de paquets au niveau noyau, risques et durcissement</li>
+              <li>Conception Zero Trust : identités de charge de travail, politiques en refus par défaut</li>
+              <li>Rédaction scientifique : travaux connexes, protocole d'évaluation reproductible, références</li>
+            </ul>
+          </div>
+          <div class="project-actions">
+            <a class="project-link link-private" href="mailto:elhadjimamadoundiaye02@esp.sn?subject=Demande%20du%20brouillon%20-%20Article%20Zero-Trust%205G%20eBPF" title="Brouillon disponible sur demande"><i class="fas fa-lock"></i> Brouillon — sur demande</a>
           </div>
         </article>
 
