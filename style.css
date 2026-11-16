@@ -1572,3 +1572,300 @@ footer {
     justify-content: center;
   }
 }
+
+/* ════════════════════════════════════════════════════════════
+   SECTION RECHERCHE  —  à coller TOUT EN BAS de style.css
+   (après le dernier bloc @media, aucune règle existante modifiée)
+   ════════════════════════════════════════════════════════════ */
+
+/* ── Fond sombre : aligné sur le header du site ── */
+#research {
+  position: relative;
+  overflow: hidden;
+  color: #e2e8f0;
+  background: linear-gradient(160deg, #0b1328 0%, #11224f 55%, #0c3a63 100%);
+}
+
+#research::before {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  top: -200px;
+  right: -160px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.28), transparent 70%);
+  pointer-events: none;
+}
+
+#research .container {
+  position: relative;
+}
+
+#research h2 {
+  color: var(--white);
+}
+
+#research .section-eyebrow {
+  color: #7dd3fc;
+}
+
+#research .section-intro {
+  color: #bfdbfe;
+}
+
+/* ── Bandeau principal : image + question de recherche ── */
+.research-hero {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 2.2rem;
+  align-items: center;
+  margin: 1.8rem 0 2.2rem;
+}
+
+.research-figure {
+  margin: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(125, 211, 252, 0.3);
+  box-shadow: 0 24px 60px rgba(2, 8, 23, 0.55), 0 0 0 6px rgba(14, 165, 233, 0.08);
+  background: #0b1328;
+}
+
+/* L'image garde son ratio naturel : rien n'est rogné, rien ne déborde */
+.research-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.research-figure figcaption {
+  padding: 0.6rem 1rem;
+  font-size: 0.78rem;
+  color: #93c5fd;
+  background: rgba(2, 8, 23, 0.6);
+}
+
+.research-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #7dd3fc;
+  background: rgba(14, 165, 233, 0.15);
+  border: 1px solid rgba(14, 165, 233, 0.35);
+}
+
+.research-hero-text h3 {
+  color: var(--white);
+  font-size: clamp(1.3rem, 2.2vw, 1.75rem);
+  margin: 0.9rem 0 0.8rem;
+}
+
+.research-question {
+  color: #cbd5e1;
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+  margin-bottom: 1.1rem;
+  font-size: 0.95rem;
+}
+
+.research-question strong {
+  color: var(--white);
+}
+
+.research-points {
+  list-style: none;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.research-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.65rem 0.9rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.research-points li i {
+  color: #38bdf8;
+  margin-top: 0.2rem;
+}
+
+/* ── Feuille de route : du prototype à la maîtrise ── */
+.research-roadmap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.2rem;
+}
+
+.roadmap-step {
+  position: relative;
+  padding: 1rem 1.1rem 1.1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+}
+
+.roadmap-step:not(:last-child)::after {
+  content: "\f054";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  right: -0.82rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.7rem;
+  color: #38bdf8;
+}
+
+.roadmap-icon {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  margin-bottom: 0.6rem;
+  font-size: 0.85rem;
+  color: #94a3b8;
+  background: rgba(148, 163, 184, 0.2);
+}
+
+.roadmap-step h4 {
+  color: var(--white);
+  font-size: 0.98rem;
+}
+
+.roadmap-step p {
+  color: #94a3b8;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.roadmap-state {
+  display: inline-block;
+  margin-top: 0.55rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.roadmap-step.done .roadmap-icon { background: #16a34a; color: #fff; }
+.roadmap-step.done .roadmap-state { background: #dcfce7; color: #15803d; }
+
+.roadmap-step.active .roadmap-icon { background: #f59e0b; color: #fff; }
+.roadmap-step.active .roadmap-state { background: #fef3c7; color: #b45309; }
+.roadmap-step.active { border-color: rgba(245, 158, 11, 0.45); }
+
+/* ── Cartes : proposition + article ── */
+.research-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem;
+}
+
+.research-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s var(--ease), border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+.research-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56, 189, 248, 0.55);
+  box-shadow: 0 20px 40px rgba(14, 165, 233, 0.18);
+}
+
+.research-card .project-status {
+  margin: 0 0 0.8rem;
+}
+
+.research-card h3 {
+  color: var(--white);
+  font-size: 1.12rem;
+  line-height: 1.35;
+}
+
+.research-card .project-date {
+  color: #93c5fd;
+  margin: 0.3rem 0 0.8rem;
+}
+
+.research-card > p {
+  color: #cbd5e1;
+  font-size: 0.93rem;
+}
+
+.research-card .tech-tags {
+  justify-content: flex-start;
+  margin-top: 0.9rem;
+}
+
+.research-card .tech-tags span {
+  background: rgba(14, 165, 233, 0.14);
+  color: #7dd3fc;
+  border-color: rgba(14, 165, 233, 0.35);
+}
+
+.research-card .skills-acquired {
+  margin-top: 1rem;
+  background: rgba(2, 8, 23, 0.35);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.research-card .skills-label {
+  color: #7dd3fc;
+}
+
+.research-card .skills-acquired li {
+  color: #cbd5e1;
+}
+
+.research-card .project-actions {
+  margin-top: auto;
+  padding-top: 1.2rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 860px) {
+  .research-hero,
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .research-roadmap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .roadmap-step::after {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .research-roadmap {
+    grid-template-columns: 1fr;
+  }
+}
